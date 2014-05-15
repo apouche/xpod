@@ -8,6 +8,8 @@
 
 #import <XCTest/XCTest.h>
 #import "XPTestHelper.h"
+#import "YAMLKit.h"
+#import "XPObject.h"
 
 @interface XPTestParsing : XCTestCase
 
@@ -29,9 +31,15 @@
 
 - (void)testExample
 {
+    XPObject* o = [[XPObject alloc] init];
+    o = nil;
     NSString* basicYmlContent = [[XPTestHelper sharedHelper] fileContentWithName:@"basic.yml"];
-//    NSString* 
+//    NSString*
+    id basicYamlDict = [YAMLKit loadFromString:basicYmlContent];
+    
     XCTAssert(basicYmlContent, @"failed to load basic.yml file");
+    XCTAssert(basicYamlDict, @"failed to parse basic.yml file");
+
 }
 
 @end
