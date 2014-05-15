@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "XPTestHelper.h"
 
 @interface XPTestParsing : XCTestCase
 
@@ -28,7 +29,9 @@
 
 - (void)testExample
 {
-//    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    NSString* basicYmlContent = [[XPTestHelper sharedHelper] fileContentWithName:@"basic.yml"];
+//    NSString* 
+    XCTAssert(basicYmlContent, @"failed to load basic.yml file");
 }
 
 @end

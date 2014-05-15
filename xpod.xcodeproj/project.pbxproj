@@ -16,6 +16,7 @@
 		0461802C1924F7FF009BEF7A /* xpod-specs-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 046180271924F7FF009BEF7A /* xpod-specs-Info.plist */; };
 		046180311924F838009BEF7A /* basic.yml in Resources */ = {isa = PBXBuildFile; fileRef = 0461802F1924F838009BEF7A /* basic.yml */; };
 		046180321924F838009BEF7A /* XPTestParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = 046180301924F838009BEF7A /* XPTestParsing.m */; };
+		046180371924FBFA009BEF7A /* XPTestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 046180361924FBFA009BEF7A /* XPTestHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		046180281924F7FF009BEF7A /* xpod-specs-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "xpod-specs-Prefix.pch"; sourceTree = "<group>"; };
 		0461802F1924F838009BEF7A /* basic.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = basic.yml; sourceTree = "<group>"; };
 		046180301924F838009BEF7A /* XPTestParsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPTestParsing.m; sourceTree = "<group>"; };
+		046180351924FBFA009BEF7A /* XPTestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPTestHelper.h; sourceTree = "<group>"; };
+		046180361924FBFA009BEF7A /* XPTestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPTestHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +153,8 @@
 			children = (
 				0461802F1924F838009BEF7A /* basic.yml */,
 				046180301924F838009BEF7A /* XPTestParsing.m */,
+				046180351924FBFA009BEF7A /* XPTestHelper.h */,
+				046180361924FBFA009BEF7A /* XPTestHelper.m */,
 			);
 			path = specs;
 			sourceTree = "<group>";
@@ -252,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				046180321924F838009BEF7A /* XPTestParsing.m in Sources */,
+				046180371924FBFA009BEF7A /* XPTestHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
