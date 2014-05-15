@@ -1,3 +1,7 @@
-pod: 
-  name: "AFNetworking"
+pods: 
+  AFNetworking:
+    git: ''
+    src: ''
+  ReactiveCocoa:
+    version: '1.0.1'
   
