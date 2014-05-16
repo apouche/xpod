@@ -6,12 +6,20 @@
 //  Copyright (c) 2014 dispatchasync. All rights reserved.
 //
 
+// Libs
 #import <XCTest/XCTest.h>
-#import "XPTestHelper.h"
 #import "YAMLKit.h"
-#import "XPObject.h"
+
+// Services
+#import "XPTestHelper.h"
+#import "XPModelParser.h"
+
+// Model
+
+#define kXPTestParsingBasicYAMLFile @"basic.yml"
 
 @interface XPTestParsing : XCTestCase
+@property (nonatomic, strong) XPModelParser* modelParser;
 
 @end
 
@@ -20,26 +28,34 @@
 - (void)setUp
 {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    self.modelParser = [[XPModelParser alloc] init];
 }
 
 - (void)tearDown
 {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    self.modelParser = nil;
+    
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testYamlParsing
 {
-    XPObject* o = [[XPObject alloc] init];
-    o = nil;
-    NSString* basicYmlContent = [[XPTestHelper sharedHelper] fileContentWithName:@"basic.yml"];
-//    NSString*
+    NSString* basicYmlContent = [[XPTestHelper sharedHelper] fileContentWithName:kXPTestParsingBasicYAMLFile];
     id basicYamlDict = [YAMLKit loadFromString:basicYmlContent];
     
     XCTAssert(basicYmlContent, @"failed to load basic.yml file");
     XCTAssert(basicYamlDict, @"failed to parse basic.yml file");
+}
 
+- (void)testPodParsing {
+    NSString* basicYmlContent = [[XPTestHelper sharedHelper] fileContentWithName:kXPTestParsingBasicYAMLFile];
+    
+    NSArray* basicPods = [self.modelParser podsFromYAMLString:basicYmlContent];
+    
+    XCTAssert(basicYmlContent, @"failed to load %@ file", kXPTestParsingBasicYAMLFile);
+    XCTAssert(basicPods, @"failed to parse %@ file", kXPTestParsingBasicYAMLFile);
+    XCTAssert(basicPods.count > 0, @"failed to parse pods in %@", kXPTestParsingBasicYAMLFile);
 }
 
 @end
