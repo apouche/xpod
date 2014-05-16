@@ -6,9 +6,12 @@
 //  Copyright (c) 2014 dispatchasync. All rights reserved.
 //
 
-#import "XPModelParser.h"
+// Libs
 #import "YAMLKit.h"
-#import "XPObject.h"
+#import "BlocksKit.h"
+
+#import "XPModelParser.h"
+#import "XPPod.h"
 
 NSString* kXPModelParserPodsKey = @"pods";
 
@@ -18,7 +21,12 @@ NSString* kXPModelParserPodsKey = @"pods";
     NSDictionary* yamlDict = [YAMLKit loadFromString:yamlString];
     NSDictionary* podsDict = [yamlDict objectForKey:kXPModelParserPodsKey];
     
-    return podsDict.allKeys;
+    NSArray* pods = [[podsDict allKeys] bk_map:^id(NSString* podName) {
+        XPPod* pod = [[XPPod alloc] initWithYAMLDictionary:podsDict[podName] name:podName];
+        return pod;
+    }];
+    
+    return pods;
 }
 
 @end

@@ -13,4 +13,6 @@
 @property (nonatomic, strong) NSURL* url;
 @property (nonatomic, strong) NSString* sourcePath;
 
+- (id)initWithYAMLDictionary:(NSDictionary*)dictionary name:(NSString*)name;
+
 @end
