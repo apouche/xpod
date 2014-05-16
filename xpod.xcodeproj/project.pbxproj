@@ -42,6 +42,8 @@
 		04B6A04A192657730047979C /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A038192657730047979C /* AFURLResponseSerialization.m */; };
 		04B6A04B192657730047979C /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A03A192657730047979C /* AFURLSessionManager.m */; };
 		04B6A04C192657730047979C /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A03A192657730047979C /* AFURLSessionManager.m */; };
+		04B6A056192659E60047979C /* XPPod.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A055192659E60047979C /* XPPod.m */; };
+		04B6A057192659E60047979C /* XPPod.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A055192659E60047979C /* XPPod.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +112,8 @@
 		04B6A038192657730047979C /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		04B6A039192657730047979C /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		04B6A03A192657730047979C /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		04B6A054192659E60047979C /* XPPod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPPod.h; sourceTree = "<group>"; };
+		04B6A055192659E60047979C /* XPPod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPPod.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +190,8 @@
 			children = (
 				046180031924F0A7009BEF7A /* XPObject.h */,
 				046180041924F0A7009BEF7A /* XPObject.m */,
+				04B6A054192659E60047979C /* XPPod.h */,
+				04B6A055192659E60047979C /* XPPod.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -361,6 +367,7 @@
 				04B6A043192657730047979C /* AFSecurityPolicy.m in Sources */,
 				0461804319250197009BEF7A /* YKParser.m in Sources */,
 				0461804119250197009BEF7A /* YAMLKit.m in Sources */,
+				04B6A056192659E60047979C /* XPPod.m in Sources */,
 				04B6A03F192657730047979C /* AFHTTPSessionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,6 +389,7 @@
 				0461804819250B1B009BEF7A /* XPObject.m in Sources */,
 				04B6A03E192657730047979C /* AFHTTPRequestOperationManager.m in Sources */,
 				04B6A044192657730047979C /* AFSecurityPolicy.m in Sources */,
+				04B6A057192659E60047979C /* XPPod.m in Sources */,
 				04B6A04A192657730047979C /* AFURLResponseSerialization.m in Sources */,
 				04B6A03C192657730047979C /* AFHTTPRequestOperation.m in Sources */,
 			);
