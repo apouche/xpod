@@ -49,6 +49,36 @@
 		04B6A057192659E60047979C /* XPPod.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A055192659E60047979C /* XPPod.m */; };
 		04B6A05A19265AF40047979C /* XPModelParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A05919265AF40047979C /* XPModelParser.m */; };
 		04B6A05B19265AF40047979C /* XPModelParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A05919265AF40047979C /* XPModelParser.m */; };
+		04B6A0801926613F0047979C /* NSArray+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A0631926613F0047979C /* NSArray+BlocksKit.m */; };
+		04B6A0811926613F0047979C /* NSArray+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A0631926613F0047979C /* NSArray+BlocksKit.m */; };
+		04B6A0821926613F0047979C /* NSDictionary+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A0651926613F0047979C /* NSDictionary+BlocksKit.m */; };
+		04B6A0831926613F0047979C /* NSDictionary+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A0651926613F0047979C /* NSDictionary+BlocksKit.m */; };
+		04B6A0841926613F0047979C /* NSIndexSet+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A0671926613F0047979C /* NSIndexSet+BlocksKit.m */; };
+		04B6A0851926613F0047979C /* NSIndexSet+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A0671926613F0047979C /* NSIndexSet+BlocksKit.m */; };
+		04B6A0861926613F0047979C /* NSInvocation+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A0691926613F0047979C /* NSInvocation+BlocksKit.m */; };
+		04B6A0871926613F0047979C /* NSInvocation+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A0691926613F0047979C /* NSInvocation+BlocksKit.m */; };
+		04B6A0881926613F0047979C /* NSMutableArray+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A06B1926613F0047979C /* NSMutableArray+BlocksKit.m */; };
+		04B6A0891926613F0047979C /* NSMutableArray+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A06B1926613F0047979C /* NSMutableArray+BlocksKit.m */; };
+		04B6A08A1926613F0047979C /* NSMutableDictionary+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A06D1926613F0047979C /* NSMutableDictionary+BlocksKit.m */; };
+		04B6A08B1926613F0047979C /* NSMutableDictionary+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A06D1926613F0047979C /* NSMutableDictionary+BlocksKit.m */; };
+		04B6A08C1926613F0047979C /* NSMutableIndexSet+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A06F1926613F0047979C /* NSMutableIndexSet+BlocksKit.m */; };
+		04B6A08D1926613F0047979C /* NSMutableIndexSet+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A06F1926613F0047979C /* NSMutableIndexSet+BlocksKit.m */; };
+		04B6A08E1926613F0047979C /* NSMutableOrderedSet+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A0711926613F0047979C /* NSMutableOrderedSet+BlocksKit.m */; };
+		04B6A08F1926613F0047979C /* NSMutableOrderedSet+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A0711926613F0047979C /* NSMutableOrderedSet+BlocksKit.m */; };
+		04B6A0901926613F0047979C /* NSMutableSet+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A0731926613F0047979C /* NSMutableSet+BlocksKit.m */; };
+		04B6A0911926613F0047979C /* NSMutableSet+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A0731926613F0047979C /* NSMutableSet+BlocksKit.m */; };
+		04B6A0921926613F0047979C /* NSObject+BKAssociatedObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A0751926613F0047979C /* NSObject+BKAssociatedObjects.m */; };
+		04B6A0931926613F0047979C /* NSObject+BKAssociatedObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A0751926613F0047979C /* NSObject+BKAssociatedObjects.m */; };
+		04B6A0941926613F0047979C /* NSObject+BKBlockExecution.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A0771926613F0047979C /* NSObject+BKBlockExecution.m */; };
+		04B6A0951926613F0047979C /* NSObject+BKBlockExecution.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A0771926613F0047979C /* NSObject+BKBlockExecution.m */; };
+		04B6A0961926613F0047979C /* NSObject+BKBlockObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A0791926613F0047979C /* NSObject+BKBlockObservation.m */; };
+		04B6A0971926613F0047979C /* NSObject+BKBlockObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A0791926613F0047979C /* NSObject+BKBlockObservation.m */; };
+		04B6A0981926613F0047979C /* NSOrderedSet+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A07B1926613F0047979C /* NSOrderedSet+BlocksKit.m */; };
+		04B6A0991926613F0047979C /* NSOrderedSet+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A07B1926613F0047979C /* NSOrderedSet+BlocksKit.m */; };
+		04B6A09A1926613F0047979C /* NSSet+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A07D1926613F0047979C /* NSSet+BlocksKit.m */; };
+		04B6A09B1926613F0047979C /* NSSet+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A07D1926613F0047979C /* NSSet+BlocksKit.m */; };
+		04B6A09C1926613F0047979C /* NSTimer+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A07F1926613F0047979C /* NSTimer+BlocksKit.m */; };
+		04B6A09D1926613F0047979C /* NSTimer+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A07F1926613F0047979C /* NSTimer+BlocksKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +154,40 @@
 		04B6A055192659E60047979C /* XPPod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPPod.m; sourceTree = "<group>"; };
 		04B6A05819265AF40047979C /* XPModelParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPModelParser.h; sourceTree = "<group>"; };
 		04B6A05919265AF40047979C /* XPModelParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPModelParser.m; sourceTree = "<group>"; };
+		04B6A05D1926613F0047979C /* BlocksKit+MessageUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BlocksKit+MessageUI.h"; sourceTree = "<group>"; };
+		04B6A05E1926613F0047979C /* BlocksKit+UIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BlocksKit+UIKit.h"; sourceTree = "<group>"; };
+		04B6A05F1926613F0047979C /* BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlocksKit.h; sourceTree = "<group>"; };
+		04B6A0611926613F0047979C /* BKMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKMacros.h; sourceTree = "<group>"; };
+		04B6A0621926613F0047979C /* NSArray+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+BlocksKit.h"; sourceTree = "<group>"; };
+		04B6A0631926613F0047979C /* NSArray+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+BlocksKit.m"; sourceTree = "<group>"; };
+		04B6A0641926613F0047979C /* NSDictionary+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+BlocksKit.h"; sourceTree = "<group>"; };
+		04B6A0651926613F0047979C /* NSDictionary+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+BlocksKit.m"; sourceTree = "<group>"; };
+		04B6A0661926613F0047979C /* NSIndexSet+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexSet+BlocksKit.h"; sourceTree = "<group>"; };
+		04B6A0671926613F0047979C /* NSIndexSet+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexSet+BlocksKit.m"; sourceTree = "<group>"; };
+		04B6A0681926613F0047979C /* NSInvocation+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+BlocksKit.h"; sourceTree = "<group>"; };
+		04B6A0691926613F0047979C /* NSInvocation+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+BlocksKit.m"; sourceTree = "<group>"; };
+		04B6A06A1926613F0047979C /* NSMutableArray+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+BlocksKit.h"; sourceTree = "<group>"; };
+		04B6A06B1926613F0047979C /* NSMutableArray+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+BlocksKit.m"; sourceTree = "<group>"; };
+		04B6A06C1926613F0047979C /* NSMutableDictionary+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+BlocksKit.h"; sourceTree = "<group>"; };
+		04B6A06D1926613F0047979C /* NSMutableDictionary+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+BlocksKit.m"; sourceTree = "<group>"; };
+		04B6A06E1926613F0047979C /* NSMutableIndexSet+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableIndexSet+BlocksKit.h"; sourceTree = "<group>"; };
+		04B6A06F1926613F0047979C /* NSMutableIndexSet+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableIndexSet+BlocksKit.m"; sourceTree = "<group>"; };
+		04B6A0701926613F0047979C /* NSMutableOrderedSet+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableOrderedSet+BlocksKit.h"; sourceTree = "<group>"; };
+		04B6A0711926613F0047979C /* NSMutableOrderedSet+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableOrderedSet+BlocksKit.m"; sourceTree = "<group>"; };
+		04B6A0721926613F0047979C /* NSMutableSet+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableSet+BlocksKit.h"; sourceTree = "<group>"; };
+		04B6A0731926613F0047979C /* NSMutableSet+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableSet+BlocksKit.m"; sourceTree = "<group>"; };
+		04B6A0741926613F0047979C /* NSObject+BKAssociatedObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BKAssociatedObjects.h"; sourceTree = "<group>"; };
+		04B6A0751926613F0047979C /* NSObject+BKAssociatedObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BKAssociatedObjects.m"; sourceTree = "<group>"; };
+		04B6A0761926613F0047979C /* NSObject+BKBlockExecution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BKBlockExecution.h"; sourceTree = "<group>"; };
+		04B6A0771926613F0047979C /* NSObject+BKBlockExecution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BKBlockExecution.m"; sourceTree = "<group>"; };
+		04B6A0781926613F0047979C /* NSObject+BKBlockObservation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BKBlockObservation.h"; sourceTree = "<group>"; };
+		04B6A0791926613F0047979C /* NSObject+BKBlockObservation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BKBlockObservation.m"; sourceTree = "<group>"; };
+		04B6A07A1926613F0047979C /* NSOrderedSet+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSOrderedSet+BlocksKit.h"; sourceTree = "<group>"; };
+		04B6A07B1926613F0047979C /* NSOrderedSet+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSOrderedSet+BlocksKit.m"; sourceTree = "<group>"; };
+		04B6A07C1926613F0047979C /* NSSet+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+BlocksKit.h"; sourceTree = "<group>"; };
+		04B6A07D1926613F0047979C /* NSSet+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+BlocksKit.m"; sourceTree = "<group>"; };
+		04B6A07E1926613F0047979C /* NSTimer+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+BlocksKit.h"; sourceTree = "<group>"; };
+		04B6A07F1926613F0047979C /* NSTimer+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+BlocksKit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +297,7 @@
 		0461803819250197009BEF7A /* dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				04B6A05C1926613F0047979C /* BlocksKit */,
 				04B6A027192657730047979C /* AFNetworking */,
 				0461803919250197009BEF7A /* yamlkit */,
 			);
@@ -288,6 +353,55 @@
 				04B6A05919265AF40047979C /* XPModelParser.m */,
 			);
 			path = services;
+			sourceTree = "<group>";
+		};
+		04B6A05C1926613F0047979C /* BlocksKit */ = {
+			isa = PBXGroup;
+			children = (
+				04B6A05D1926613F0047979C /* BlocksKit+MessageUI.h */,
+				04B6A05E1926613F0047979C /* BlocksKit+UIKit.h */,
+				04B6A05F1926613F0047979C /* BlocksKit.h */,
+				04B6A0601926613F0047979C /* Core */,
+			);
+			path = BlocksKit;
+			sourceTree = "<group>";
+		};
+		04B6A0601926613F0047979C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				04B6A0611926613F0047979C /* BKMacros.h */,
+				04B6A0621926613F0047979C /* NSArray+BlocksKit.h */,
+				04B6A0631926613F0047979C /* NSArray+BlocksKit.m */,
+				04B6A0641926613F0047979C /* NSDictionary+BlocksKit.h */,
+				04B6A0651926613F0047979C /* NSDictionary+BlocksKit.m */,
+				04B6A0661926613F0047979C /* NSIndexSet+BlocksKit.h */,
+				04B6A0671926613F0047979C /* NSIndexSet+BlocksKit.m */,
+				04B6A0681926613F0047979C /* NSInvocation+BlocksKit.h */,
+				04B6A0691926613F0047979C /* NSInvocation+BlocksKit.m */,
+				04B6A06A1926613F0047979C /* NSMutableArray+BlocksKit.h */,
+				04B6A06B1926613F0047979C /* NSMutableArray+BlocksKit.m */,
+				04B6A06C1926613F0047979C /* NSMutableDictionary+BlocksKit.h */,
+				04B6A06D1926613F0047979C /* NSMutableDictionary+BlocksKit.m */,
+				04B6A06E1926613F0047979C /* NSMutableIndexSet+BlocksKit.h */,
+				04B6A06F1926613F0047979C /* NSMutableIndexSet+BlocksKit.m */,
+				04B6A0701926613F0047979C /* NSMutableOrderedSet+BlocksKit.h */,
+				04B6A0711926613F0047979C /* NSMutableOrderedSet+BlocksKit.m */,
+				04B6A0721926613F0047979C /* NSMutableSet+BlocksKit.h */,
+				04B6A0731926613F0047979C /* NSMutableSet+BlocksKit.m */,
+				04B6A0741926613F0047979C /* NSObject+BKAssociatedObjects.h */,
+				04B6A0751926613F0047979C /* NSObject+BKAssociatedObjects.m */,
+				04B6A0761926613F0047979C /* NSObject+BKBlockExecution.h */,
+				04B6A0771926613F0047979C /* NSObject+BKBlockExecution.m */,
+				04B6A0781926613F0047979C /* NSObject+BKBlockObservation.h */,
+				04B6A0791926613F0047979C /* NSObject+BKBlockObservation.m */,
+				04B6A07A1926613F0047979C /* NSOrderedSet+BlocksKit.h */,
+				04B6A07B1926613F0047979C /* NSOrderedSet+BlocksKit.m */,
+				04B6A07C1926613F0047979C /* NSSet+BlocksKit.h */,
+				04B6A07D1926613F0047979C /* NSSet+BlocksKit.m */,
+				04B6A07E1926613F0047979C /* NSTimer+BlocksKit.h */,
+				04B6A07F1926613F0047979C /* NSTimer+BlocksKit.m */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,21 +492,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				04B6A045192657730047979C /* AFURLConnectionOperation.m in Sources */,
+				04B6A09C1926613F0047979C /* NSTimer+BlocksKit.m in Sources */,
+				04B6A0961926613F0047979C /* NSObject+BKBlockObservation.m in Sources */,
 				04B6A03B192657730047979C /* AFHTTPRequestOperation.m in Sources */,
 				04B6A041192657730047979C /* AFNetworkReachabilityManager.m in Sources */,
+				04B6A0801926613F0047979C /* NSArray+BlocksKit.m in Sources */,
+				04B6A0881926613F0047979C /* NSMutableArray+BlocksKit.m in Sources */,
+				04B6A0861926613F0047979C /* NSInvocation+BlocksKit.m in Sources */,
+				04B6A0921926613F0047979C /* NSObject+BKAssociatedObjects.m in Sources */,
 				04B6A04B192657730047979C /* AFURLSessionManager.m in Sources */,
+				04B6A09A1926613F0047979C /* NSSet+BlocksKit.m in Sources */,
 				04B6A047192657730047979C /* AFURLRequestSerialization.m in Sources */,
 				0461804219250197009BEF7A /* YKEmitter.m in Sources */,
+				04B6A0841926613F0047979C /* NSIndexSet+BlocksKit.m in Sources */,
+				04B6A08A1926613F0047979C /* NSMutableDictionary+BlocksKit.m in Sources */,
+				04B6A0901926613F0047979C /* NSMutableSet+BlocksKit.m in Sources */,
 				04B6A049192657730047979C /* AFURLResponseSerialization.m in Sources */,
 				046180051924F0A7009BEF7A /* XPObject.m in Sources */,
 				04617FF81924F033009BEF7A /* main.m in Sources */,
+				04B6A08E1926613F0047979C /* NSMutableOrderedSet+BlocksKit.m in Sources */,
 				04B6A03D192657730047979C /* AFHTTPRequestOperationManager.m in Sources */,
 				04B6A043192657730047979C /* AFSecurityPolicy.m in Sources */,
+				04B6A0981926613F0047979C /* NSOrderedSet+BlocksKit.m in Sources */,
+				04B6A08C1926613F0047979C /* NSMutableIndexSet+BlocksKit.m in Sources */,
 				0461804319250197009BEF7A /* YKParser.m in Sources */,
 				0461804119250197009BEF7A /* YAMLKit.m in Sources */,
 				04B6A05A19265AF40047979C /* XPModelParser.m in Sources */,
 				04B6A056192659E60047979C /* XPPod.m in Sources */,
 				04B6A050192658910047979C /* XPSourceFetcher.m in Sources */,
+				04B6A0941926613F0047979C /* NSObject+BKBlockExecution.m in Sources */,
+				04B6A0821926613F0047979C /* NSDictionary+BlocksKit.m in Sources */,
 				04B6A03F192657730047979C /* AFHTTPSessionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,19 +536,34 @@
 				04B6A042192657730047979C /* AFNetworkReachabilityManager.m in Sources */,
 				0461804519250B1B009BEF7A /* YAMLKit.m in Sources */,
 				04B6A046192657730047979C /* AFURLConnectionOperation.m in Sources */,
+				04B6A0831926613F0047979C /* NSDictionary+BlocksKit.m in Sources */,
 				04B6A053192659B40047979C /* XPTestSourceFetcher.m in Sources */,
+				04B6A08D1926613F0047979C /* NSMutableIndexSet+BlocksKit.m in Sources */,
+				04B6A08B1926613F0047979C /* NSMutableDictionary+BlocksKit.m in Sources */,
 				04B6A051192658910047979C /* XPSourceFetcher.m in Sources */,
 				04B6A040192657730047979C /* AFHTTPSessionManager.m in Sources */,
 				04B6A048192657730047979C /* AFURLRequestSerialization.m in Sources */,
 				0461804619250B1B009BEF7A /* YKEmitter.m in Sources */,
+				04B6A0871926613F0047979C /* NSInvocation+BlocksKit.m in Sources */,
+				04B6A0911926613F0047979C /* NSMutableSet+BlocksKit.m in Sources */,
+				04B6A0811926613F0047979C /* NSArray+BlocksKit.m in Sources */,
+				04B6A0971926613F0047979C /* NSObject+BKBlockObservation.m in Sources */,
 				0461804719250B1B009BEF7A /* YKParser.m in Sources */,
 				0461804819250B1B009BEF7A /* XPObject.m in Sources */,
+				04B6A0891926613F0047979C /* NSMutableArray+BlocksKit.m in Sources */,
 				04B6A03E192657730047979C /* AFHTTPRequestOperationManager.m in Sources */,
+				04B6A0991926613F0047979C /* NSOrderedSet+BlocksKit.m in Sources */,
 				04B6A044192657730047979C /* AFSecurityPolicy.m in Sources */,
+				04B6A0851926613F0047979C /* NSIndexSet+BlocksKit.m in Sources */,
 				04B6A057192659E60047979C /* XPPod.m in Sources */,
+				04B6A0931926613F0047979C /* NSObject+BKAssociatedObjects.m in Sources */,
 				04B6A04A192657730047979C /* AFURLResponseSerialization.m in Sources */,
+				04B6A09B1926613F0047979C /* NSSet+BlocksKit.m in Sources */,
 				04B6A05B19265AF40047979C /* XPModelParser.m in Sources */,
 				04B6A03C192657730047979C /* AFHTTPRequestOperation.m in Sources */,
+				04B6A09D1926613F0047979C /* NSTimer+BlocksKit.m in Sources */,
+				04B6A08F1926613F0047979C /* NSMutableOrderedSet+BlocksKit.m in Sources */,
+				04B6A0951926613F0047979C /* NSObject+BKBlockExecution.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
