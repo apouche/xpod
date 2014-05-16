@@ -47,6 +47,8 @@
 		04B6A053192659B40047979C /* XPTestSourceFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A052192659B40047979C /* XPTestSourceFetcher.m */; };
 		04B6A056192659E60047979C /* XPPod.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A055192659E60047979C /* XPPod.m */; };
 		04B6A057192659E60047979C /* XPPod.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A055192659E60047979C /* XPPod.m */; };
+		04B6A05A19265AF40047979C /* XPModelParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A05919265AF40047979C /* XPModelParser.m */; };
+		04B6A05B19265AF40047979C /* XPModelParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A05919265AF40047979C /* XPModelParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +122,8 @@
 		04B6A052192659B40047979C /* XPTestSourceFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPTestSourceFetcher.m; sourceTree = "<group>"; };
 		04B6A054192659E60047979C /* XPPod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPPod.h; sourceTree = "<group>"; };
 		04B6A055192659E60047979C /* XPPod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPPod.m; sourceTree = "<group>"; };
+		04B6A05819265AF40047979C /* XPModelParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPModelParser.h; sourceTree = "<group>"; };
+		04B6A05919265AF40047979C /* XPModelParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPModelParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,6 +284,8 @@
 			children = (
 				04B6A04E192658910047979C /* XPSourceFetcher.h */,
 				04B6A04F192658910047979C /* XPSourceFetcher.m */,
+				04B6A05819265AF40047979C /* XPModelParser.h */,
+				04B6A05919265AF40047979C /* XPModelParser.m */,
 			);
 			path = services;
 			sourceTree = "<group>";
@@ -384,6 +390,7 @@
 				04B6A043192657730047979C /* AFSecurityPolicy.m in Sources */,
 				0461804319250197009BEF7A /* YKParser.m in Sources */,
 				0461804119250197009BEF7A /* YAMLKit.m in Sources */,
+				04B6A05A19265AF40047979C /* XPModelParser.m in Sources */,
 				04B6A056192659E60047979C /* XPPod.m in Sources */,
 				04B6A050192658910047979C /* XPSourceFetcher.m in Sources */,
 				04B6A03F192657730047979C /* AFHTTPSessionManager.m in Sources */,
@@ -411,6 +418,7 @@
 				04B6A044192657730047979C /* AFSecurityPolicy.m in Sources */,
 				04B6A057192659E60047979C /* XPPod.m in Sources */,
 				04B6A04A192657730047979C /* AFURLResponseSerialization.m in Sources */,
+				04B6A05B19265AF40047979C /* XPModelParser.m in Sources */,
 				04B6A03C192657730047979C /* AFHTTPRequestOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
