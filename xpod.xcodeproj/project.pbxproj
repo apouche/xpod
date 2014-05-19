@@ -107,6 +107,10 @@
 		04B6A0F8192A53EC0047979C /* NSValueTransformer+MTLInversionAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A0DC192A53EC0047979C /* NSValueTransformer+MTLInversionAdditions.m */; };
 		04B6A0F9192A53EC0047979C /* NSValueTransformer+MTLPredefinedTransformerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A0DE192A53EC0047979C /* NSValueTransformer+MTLPredefinedTransformerAdditions.m */; };
 		04B6A0FA192A53EC0047979C /* NSValueTransformer+MTLPredefinedTransformerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A0DE192A53EC0047979C /* NSValueTransformer+MTLPredefinedTransformerAdditions.m */; };
+		04B6A0FF192A5A080047979C /* GHObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A0FE192A5A080047979C /* GHObject.m */; };
+		04B6A100192A5A080047979C /* GHObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A0FE192A5A080047979C /* GHObject.m */; };
+		04B6A103192A5A2D0047979C /* GHRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A102192A5A2D0047979C /* GHRepository.m */; };
+		04B6A104192A5A2D0047979C /* GHRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A102192A5A2D0047979C /* GHRepository.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -247,6 +251,10 @@
 		04B6A0DC192A53EC0047979C /* NSValueTransformer+MTLInversionAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValueTransformer+MTLInversionAdditions.m"; sourceTree = "<group>"; };
 		04B6A0DD192A53EC0047979C /* NSValueTransformer+MTLPredefinedTransformerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValueTransformer+MTLPredefinedTransformerAdditions.h"; sourceTree = "<group>"; };
 		04B6A0DE192A53EC0047979C /* NSValueTransformer+MTLPredefinedTransformerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValueTransformer+MTLPredefinedTransformerAdditions.m"; sourceTree = "<group>"; };
+		04B6A0FD192A5A080047979C /* GHObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHObject.h; sourceTree = "<group>"; };
+		04B6A0FE192A5A080047979C /* GHObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHObject.m; sourceTree = "<group>"; };
+		04B6A101192A5A2D0047979C /* GHRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHRepository.h; sourceTree = "<group>"; };
+		04B6A102192A5A2D0047979C /* GHRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepository.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -522,6 +530,10 @@
 		04B6A0FC192A59830047979C /* github */ = {
 			isa = PBXGroup;
 			children = (
+				04B6A0FD192A5A080047979C /* GHObject.h */,
+				04B6A0FE192A5A080047979C /* GHObject.m */,
+				04B6A101192A5A2D0047979C /* GHRepository.h */,
+				04B6A102192A5A2D0047979C /* GHRepository.m */,
 			);
 			name = github;
 			sourceTree = "<group>";
@@ -628,6 +640,7 @@
 				04B6A04B192657730047979C /* AFURLSessionManager.m in Sources */,
 				04B6A09A1926613F0047979C /* NSSet+BlocksKit.m in Sources */,
 				04B6A047192657730047979C /* AFURLRequestSerialization.m in Sources */,
+				04B6A0FF192A5A080047979C /* GHObject.m in Sources */,
 				04B6A0E3192A53EC0047979C /* MTLJSONAdapter.m in Sources */,
 				0461804219250197009BEF7A /* YKEmitter.m in Sources */,
 				04B6A0841926613F0047979C /* NSIndexSet+BlocksKit.m in Sources */,
@@ -652,6 +665,7 @@
 				04B6A050192658910047979C /* XPSourceFetcher.m in Sources */,
 				04B6A0941926613F0047979C /* NSObject+BKBlockExecution.m in Sources */,
 				04B6A0821926613F0047979C /* NSDictionary+BlocksKit.m in Sources */,
+				04B6A103192A5A2D0047979C /* GHRepository.m in Sources */,
 				04B6A0F1192A53EC0047979C /* NSDictionary+MTLManipulationAdditions.m in Sources */,
 				04B6A0F7192A53EC0047979C /* NSValueTransformer+MTLInversionAdditions.m in Sources */,
 				04B6A0E7192A53EC0047979C /* MTLModel+NSCoding.m in Sources */,
@@ -686,6 +700,7 @@
 				04B6A048192657730047979C /* AFURLRequestSerialization.m in Sources */,
 				0461804619250B1B009BEF7A /* YKEmitter.m in Sources */,
 				04B6A0871926613F0047979C /* NSInvocation+BlocksKit.m in Sources */,
+				04B6A104192A5A2D0047979C /* GHRepository.m in Sources */,
 				04B6A0911926613F0047979C /* NSMutableSet+BlocksKit.m in Sources */,
 				04B6A0EC192A53EC0047979C /* MTLReflection.m in Sources */,
 				04B6A0811926613F0047979C /* NSArray+BlocksKit.m in Sources */,
@@ -706,6 +721,7 @@
 				04B6A0931926613F0047979C /* NSObject+BKAssociatedObjects.m in Sources */,
 				04B6A04A192657730047979C /* AFURLResponseSerialization.m in Sources */,
 				04B6A09B1926613F0047979C /* NSSet+BlocksKit.m in Sources */,
+				04B6A100192A5A080047979C /* GHObject.m in Sources */,
 				04B6A05B19265AF40047979C /* XPModelParser.m in Sources */,
 				04B6A0E8192A53EC0047979C /* MTLModel+NSCoding.m in Sources */,
 				04B6A0F6192A53EC0047979C /* NSObject+MTLComparisonAdditions.m in Sources */,
