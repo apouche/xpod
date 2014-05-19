@@ -322,10 +322,8 @@
 		046180021924F09D009BEF7A /* models */ = {
 			isa = PBXGroup;
 			children = (
-				046180031924F0A7009BEF7A /* XPObject.h */,
-				046180041924F0A7009BEF7A /* XPObject.m */,
-				04B6A054192659E60047979C /* XPPod.h */,
-				04B6A055192659E60047979C /* XPPod.m */,
+				04B6A0FC192A59830047979C /* github */,
+				04B6A0FB192A59780047979C /* xpod */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -508,6 +506,24 @@
 				04B6A0C5192A53EC0047979C /* metamacros.h */,
 			);
 			path = extobjc;
+			sourceTree = "<group>";
+		};
+		04B6A0FB192A59780047979C /* xpod */ = {
+			isa = PBXGroup;
+			children = (
+				046180031924F0A7009BEF7A /* XPObject.h */,
+				046180041924F0A7009BEF7A /* XPObject.m */,
+				04B6A054192659E60047979C /* XPPod.h */,
+				04B6A055192659E60047979C /* XPPod.m */,
+			);
+			name = xpod;
+			sourceTree = "<group>";
+		};
+		04B6A0FC192A59830047979C /* github */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = github;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
