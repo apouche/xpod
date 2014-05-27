@@ -17,6 +17,7 @@ typedef NS_ENUM(NSUInteger, XPSourceFetcherHost) {
 
 @interface XPSourceFetcher : NSObject
 
+- (XPSourceFetcherHost)fetcherHostFromURL:(NSURL*)url;
 - (void)retreiveSourcesForPod:(XPPod*)pod completion:(void(^)(NSArray* urls, NSError* error))completionBlock;
 
 @end

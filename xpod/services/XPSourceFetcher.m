@@ -10,9 +10,9 @@
 
 // Categories
 #import "XPSourceFetcher+Github.h"
+#import "NSString+RegularExpressions.h"
 
 @interface XPSourceFetcher ()
-- (XPSourceFetcherHost)fetcherHostFromURL:(NSURL*)url;
 
 @end
 
@@ -25,7 +25,11 @@
 #pragma mark - Helpers
 
 - (XPSourceFetcherHost)fetcherHostFromURL:(NSURL *)url {
-    return 0;
+    NSString* urlStr = [url absoluteString];
+    if ([urlStr subStringWithPattern:@"github"])
+        return XPSourceFetcherHostGithub;
+    
+    return XPSourceFetcherHostUnkown;
 }
 
 @end

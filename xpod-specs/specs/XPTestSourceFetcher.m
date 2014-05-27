@@ -18,7 +18,8 @@
 #define kXPTestSourcePodName @"AFNetworking"
 
 @interface XPTestSourceFetcher : XCTestCase
-@property (nonatomic, strong) XPSourceFetcher* githubFetcher;
+@property (nonatomic, strong) XPSourceFetcher* sourceFetcher;
+@property (nonatomic, strong) XPPod* githubPod;
 
 @end
 
@@ -28,7 +29,11 @@
 {
     [super setUp];
     
-    self.githubFetcher = [[XPSourceFetcher alloc] init];
+    self.sourceFetcher = [[XPSourceFetcher alloc] init];
+    
+    self.githubPod = [[XPPod alloc] init];
+    self.githubPod.url = [NSURL URLWithString:kXPTestSourcePodURL];
+    self.githubPod.name = kXPTestSourcePodName;
 }
 
 - (void)tearDown
@@ -37,14 +42,11 @@
     [super tearDown];
 }
 
-- (void)testGithubFetcher
+- (void)testFetcherHost
 {
-    XPPod* pod = [[XPPod alloc] init];
-    pod.url = [NSURL URLWithString:kXPTestSourcePodURL];
-    pod.name = kXPTestSourcePodName;
+    XPSourceFetcherHost host = [self.sourceFetcher fetcherHostFromURL:self.githubPod.url];
     
-    
-//    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    XCTAssert(host == XPSourceFetcherHostGithub, @"%@ should be equal to %@", @(host), @(XPSourceFetcherHostGithub));
 }
 
 @end
