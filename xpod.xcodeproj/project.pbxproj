@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		0411C5B219349538009F44A3 /* XPSourceFetcher+Github.m in Sources */ = {isa = PBXBuildFile; fileRef = 0411C5B119349538009F44A3 /* XPSourceFetcher+Github.m */; };
 		0411C5B319349538009F44A3 /* XPSourceFetcher+Github.m in Sources */ = {isa = PBXBuildFile; fileRef = 0411C5B119349538009F44A3 /* XPSourceFetcher+Github.m */; };
+		0411C5BA1934994D009F44A3 /* NSDictionary+ManipulationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0411C5B71934994D009F44A3 /* NSDictionary+ManipulationAdditions.m */; };
+		0411C5BB1934994D009F44A3 /* NSDictionary+ManipulationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0411C5B71934994D009F44A3 /* NSDictionary+ManipulationAdditions.m */; };
+		0411C5BC1934994D009F44A3 /* NSString+RegularExpressions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0411C5B91934994D009F44A3 /* NSString+RegularExpressions.m */; };
+		0411C5BD1934994D009F44A3 /* NSString+RegularExpressions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0411C5B91934994D009F44A3 /* NSString+RegularExpressions.m */; };
 		04617FF51924F033009BEF7A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04617FF41924F033009BEF7A /* Foundation.framework */; };
 		04617FF81924F033009BEF7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04617FF71924F033009BEF7A /* main.m */; };
 		04617FFC1924F033009BEF7A /* xpod.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 04617FFB1924F033009BEF7A /* xpod.1 */; };
@@ -113,6 +117,10 @@
 /* Begin PBXFileReference section */
 		0411C5B019349538009F44A3 /* XPSourceFetcher+Github.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XPSourceFetcher+Github.h"; sourceTree = "<group>"; };
 		0411C5B119349538009F44A3 /* XPSourceFetcher+Github.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XPSourceFetcher+Github.m"; sourceTree = "<group>"; };
+		0411C5B61934994D009F44A3 /* NSDictionary+ManipulationAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ManipulationAdditions.h"; sourceTree = "<group>"; };
+		0411C5B71934994D009F44A3 /* NSDictionary+ManipulationAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ManipulationAdditions.m"; sourceTree = "<group>"; };
+		0411C5B81934994D009F44A3 /* NSString+RegularExpressions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RegularExpressions.h"; sourceTree = "<group>"; };
+		0411C5B91934994D009F44A3 /* NSString+RegularExpressions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RegularExpressions.m"; sourceTree = "<group>"; };
 		04617FF11924F033009BEF7A /* xpod */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = xpod; sourceTree = BUILT_PRODUCTS_DIR; };
 		04617FF41924F033009BEF7A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		04617FF71924F033009BEF7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -234,6 +242,17 @@
 			name = fetchers;
 			sourceTree = "<group>";
 		};
+		0411C5B51934994D009F44A3 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0411C5B61934994D009F44A3 /* NSDictionary+ManipulationAdditions.h */,
+				0411C5B71934994D009F44A3 /* NSDictionary+ManipulationAdditions.m */,
+				0411C5B81934994D009F44A3 /* NSString+RegularExpressions.h */,
+				0411C5B91934994D009F44A3 /* NSString+RegularExpressions.m */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
 		04617FE81924F033009BEF7A = {
 			isa = PBXGroup;
 			children = (
@@ -265,22 +284,23 @@
 		04617FF61924F033009BEF7A /* xpod */ = {
 			isa = PBXGroup;
 			children = (
-				0461803819250197009BEF7A /* dependencies */,
+				0411C5B51934994D009F44A3 /* extensions */,
 				046180021924F09D009BEF7A /* models */,
 				04B6A04D1926586A0047979C /* services */,
-				04617FF71924F033009BEF7A /* main.m */,
-				04617FFB1924F033009BEF7A /* xpod.1 */,
-				04617FF91924F033009BEF7A /* Supporting Files */,
+				0461803819250197009BEF7A /* dependencies */,
+				04617FF91924F033009BEF7A /* apple */,
 			);
 			path = xpod;
 			sourceTree = "<group>";
 		};
-		04617FF91924F033009BEF7A /* Supporting Files */ = {
+		04617FF91924F033009BEF7A /* apple */ = {
 			isa = PBXGroup;
 			children = (
+				04617FF71924F033009BEF7A /* main.m */,
+				04617FFB1924F033009BEF7A /* xpod.1 */,
 				04617FFA1924F033009BEF7A /* xpod-Prefix.pch */,
 			);
-			name = "Supporting Files";
+			name = apple;
 			sourceTree = "<group>";
 		};
 		046180021924F09D009BEF7A /* models */ = {
@@ -538,6 +558,7 @@
 				04B6A0961926613F0047979C /* NSObject+BKBlockObservation.m in Sources */,
 				04B6A03B192657730047979C /* AFHTTPRequestOperation.m in Sources */,
 				04B6A041192657730047979C /* AFNetworkReachabilityManager.m in Sources */,
+				0411C5BA1934994D009F44A3 /* NSDictionary+ManipulationAdditions.m in Sources */,
 				04B6A0801926613F0047979C /* NSArray+BlocksKit.m in Sources */,
 				04B6A0881926613F0047979C /* NSMutableArray+BlocksKit.m in Sources */,
 				04B6A0861926613F0047979C /* NSInvocation+BlocksKit.m in Sources */,
@@ -546,6 +567,7 @@
 				04B6A09A1926613F0047979C /* NSSet+BlocksKit.m in Sources */,
 				04B6A047192657730047979C /* AFURLRequestSerialization.m in Sources */,
 				04B6A0FF192A5A080047979C /* GHObject.m in Sources */,
+				0411C5BC1934994D009F44A3 /* NSString+RegularExpressions.m in Sources */,
 				0461804219250197009BEF7A /* YKEmitter.m in Sources */,
 				04B6A0841926613F0047979C /* NSIndexSet+BlocksKit.m in Sources */,
 				04B6A08A1926613F0047979C /* NSMutableDictionary+BlocksKit.m in Sources */,
@@ -587,6 +609,7 @@
 				04B6A08B1926613F0047979C /* NSMutableDictionary+BlocksKit.m in Sources */,
 				04B6A051192658910047979C /* XPSourceFetcher.m in Sources */,
 				04B6A040192657730047979C /* AFHTTPSessionManager.m in Sources */,
+				0411C5BD1934994D009F44A3 /* NSString+RegularExpressions.m in Sources */,
 				04B6A048192657730047979C /* AFURLRequestSerialization.m in Sources */,
 				0461804619250B1B009BEF7A /* YKEmitter.m in Sources */,
 				0411C5B319349538009F44A3 /* XPSourceFetcher+Github.m in Sources */,
@@ -602,6 +625,7 @@
 				04B6A0991926613F0047979C /* NSOrderedSet+BlocksKit.m in Sources */,
 				04B6A044192657730047979C /* AFSecurityPolicy.m in Sources */,
 				04B6A0851926613F0047979C /* NSIndexSet+BlocksKit.m in Sources */,
+				0411C5BB1934994D009F44A3 /* NSDictionary+ManipulationAdditions.m in Sources */,
 				04B6A057192659E60047979C /* XPPod.m in Sources */,
 				04B6A0931926613F0047979C /* NSObject+BKAssociatedObjects.m in Sources */,
 				04B6A04A192657730047979C /* AFURLResponseSerialization.m in Sources */,
