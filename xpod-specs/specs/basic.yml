@@ -1,6 +1,6 @@
 pods: 
   AFNetworking:
-    git: 'https://github.com/AFNetworking/AFNetworking.git'
+    url: 'https://github.com/AFNetworking/AFNetworking.git'
     src: 'AFNetworking/*'
   ReactiveCocoa:
     version: '1.0.1'

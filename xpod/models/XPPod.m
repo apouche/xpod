@@ -9,7 +9,7 @@
 #import "XPPod.h"
 
 const NSString* kXPPodSourceKey = @"src";
-const NSString* kXPPodURLKey = @"git";
+const NSString* kXPPodURLKey = @"url";
 
 @implementation XPPod
 
