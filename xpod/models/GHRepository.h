@@ -8,7 +8,7 @@
 
 #import "GHObject.h"
 
-@interface GHRepository : GHObject <MTLJSONSerializing>
+@interface GHRepository : GHObject
 @property (nonatomic, copy, readonly) NSString *ownerLogin;
 @property (nonatomic, copy, readonly) NSString *repoDescription;
 @property (nonatomic, assign, getter = isPrivate, readonly) BOOL private;

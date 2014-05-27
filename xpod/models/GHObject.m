@@ -10,8 +10,6 @@
 
 @implementation GHObject
 
-#pragma mark - Mantle
-
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{
              @"objectID": @"id",

@@ -6,9 +6,8 @@
 //  Copyright (c) 2014 dispatchasync. All rights reserved.
 //
 
-#import "MTLModel.h"
 
-@interface GHObject : MTLModel <MTLJSONSerializing>
+@interface GHObject : NSObject
 @property (nonatomic, copy, readonly) NSString *name;
 @property (nonatomic, copy, readonly) NSString *objectID;
 
