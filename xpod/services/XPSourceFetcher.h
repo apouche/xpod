@@ -8,6 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+@class XPPod;
+
+typedef NS_ENUM(NSUInteger, XPSourceFetcherHost) {
+    XPSourceFetcherHostUnkown = 0,
+    XPSourceFetcherHostGithub,
+};
+
 @interface XPSourceFetcher : NSObject
+
+- (void)retreiveSourcesForPod:(XPPod*)pod completion:(void(^)(NSArray* urls, NSError* error))completionBlock;
 
 @end

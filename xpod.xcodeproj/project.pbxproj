@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0411C5B219349538009F44A3 /* XPSourceFetcher+Github.m in Sources */ = {isa = PBXBuildFile; fileRef = 0411C5B119349538009F44A3 /* XPSourceFetcher+Github.m */; };
+		0411C5B319349538009F44A3 /* XPSourceFetcher+Github.m in Sources */ = {isa = PBXBuildFile; fileRef = 0411C5B119349538009F44A3 /* XPSourceFetcher+Github.m */; };
 		04617FF51924F033009BEF7A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04617FF41924F033009BEF7A /* Foundation.framework */; };
 		04617FF81924F033009BEF7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04617FF71924F033009BEF7A /* main.m */; };
 		04617FFC1924F033009BEF7A /* xpod.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 04617FFB1924F033009BEF7A /* xpod.1 */; };
@@ -109,6 +111,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0411C5B019349538009F44A3 /* XPSourceFetcher+Github.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XPSourceFetcher+Github.h"; sourceTree = "<group>"; };
+		0411C5B119349538009F44A3 /* XPSourceFetcher+Github.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XPSourceFetcher+Github.m"; sourceTree = "<group>"; };
 		04617FF11924F033009BEF7A /* xpod */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = xpod; sourceTree = BUILT_PRODUCTS_DIR; };
 		04617FF41924F033009BEF7A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		04617FF71924F033009BEF7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -219,6 +223,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0411C5AB19348F30009F44A3 /* fetchers */ = {
+			isa = PBXGroup;
+			children = (
+				04B6A04E192658910047979C /* XPSourceFetcher.h */,
+				04B6A04F192658910047979C /* XPSourceFetcher.m */,
+				0411C5B019349538009F44A3 /* XPSourceFetcher+Github.h */,
+				0411C5B119349538009F44A3 /* XPSourceFetcher+Github.m */,
+			);
+			name = fetchers;
+			sourceTree = "<group>";
+		};
 		04617FE81924F033009BEF7A = {
 			isa = PBXGroup;
 			children = (
@@ -353,8 +368,7 @@
 		04B6A04D1926586A0047979C /* services */ = {
 			isa = PBXGroup;
 			children = (
-				04B6A04E192658910047979C /* XPSourceFetcher.h */,
-				04B6A04F192658910047979C /* XPSourceFetcher.m */,
+				0411C5AB19348F30009F44A3 /* fetchers */,
 				04B6A05819265AF40047979C /* XPModelParser.h */,
 				04B6A05919265AF40047979C /* XPModelParser.m */,
 			);
@@ -552,6 +566,7 @@
 				04B6A0941926613F0047979C /* NSObject+BKBlockExecution.m in Sources */,
 				04B6A0821926613F0047979C /* NSDictionary+BlocksKit.m in Sources */,
 				04B6A103192A5A2D0047979C /* GHRepository.m in Sources */,
+				0411C5B219349538009F44A3 /* XPSourceFetcher+Github.m in Sources */,
 				04B6A03F192657730047979C /* AFHTTPSessionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -574,6 +589,7 @@
 				04B6A040192657730047979C /* AFHTTPSessionManager.m in Sources */,
 				04B6A048192657730047979C /* AFURLRequestSerialization.m in Sources */,
 				0461804619250B1B009BEF7A /* YKEmitter.m in Sources */,
+				0411C5B319349538009F44A3 /* XPSourceFetcher+Github.m in Sources */,
 				04B6A0871926613F0047979C /* NSInvocation+BlocksKit.m in Sources */,
 				04B6A104192A5A2D0047979C /* GHRepository.m in Sources */,
 				04B6A0911926613F0047979C /* NSMutableSet+BlocksKit.m in Sources */,

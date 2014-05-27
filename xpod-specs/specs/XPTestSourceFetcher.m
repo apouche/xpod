@@ -8,7 +8,17 @@
 
 #import <XCTest/XCTest.h>
 
+// Fetchers
+#import "XPSourceFetcher.h"
+
+// Model
+#import "XPPod.h"
+
+#define kXPTestSourcePodURL @"https://github.com/AFNetworking/AFNetworking.git"
+#define kXPTestSourcePodName @"AFNetworking"
+
 @interface XPTestSourceFetcher : XCTestCase
+@property (nonatomic, strong) XPSourceFetcher* githubFetcher;
 
 @end
 
@@ -17,7 +27,8 @@
 - (void)setUp
 {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    self.githubFetcher = [[XPSourceFetcher alloc] init];
 }
 
 - (void)tearDown
@@ -26,8 +37,13 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testGithubFetcher
 {
+    XPPod* pod = [[XPPod alloc] init];
+    pod.url = [NSURL URLWithString:kXPTestSourcePodURL];
+    pod.name = kXPTestSourcePodName;
+    
+    
 //    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
 }
 
