@@ -10,6 +10,7 @@
 
 const NSString* kXPPodSourceKey = @"src";
 const NSString* kXPPodURLKey = @"url";
+const NSString* kXPPodArchitecturesKey = @"archs";
 
 @implementation XPPod
 
@@ -18,6 +19,12 @@ const NSString* kXPPodURLKey = @"url";
         self.name = name;
         self.url = [NSURL URLWithString:dictionary[kXPPodURLKey]];
         self.sourcePattern = dictionary[kXPPodSourceKey];
+        
+        id archs = dictionary[kXPPodArchitecturesKey];
+        if ([archs isKindOfClass:[NSArray class]])
+            self.architectures = archs;
+        else if ([archs isKindOfClass:[NSString class]])
+            self.architectures = @[archs];
     }
     return self;
 }

@@ -61,13 +61,13 @@
 
 - (void)testPodCreation {
     NSString* podName = @"XPPodName";
-    NSDictionary* podDict = @{podName : @{ @"url" : @"file://xpod-url"}};
+    NSDictionary* podDict = @{podName : @{ @"url" : @"file://xpod-url", @"archs" : @[@"armv7", @"armv7s", @"arm64"]}};
     
     XPPod* pod = [[XPPod alloc] initWithYAMLDictionary:podDict[podName] name:podName];
     
     XCTAssert([pod.name isEqualToString:podName], @"pod name mismatched");
-    XCTAssert([pod.url.absoluteString isEqualToString:@"file://xpod-url"], @"url mismatched");
-              
+    XCTAssert([pod.url.absoluteString isEqualToString:@"file://xpod-url"], @"pod url mismatched");
+    XCTAssert(([pod.architectures isEqualToArray:@[@"armv7", @"armv7s", @"arm64"]]), @"pod arch mismatched");
 }
 
 @end
