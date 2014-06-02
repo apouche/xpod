@@ -89,6 +89,8 @@
 		04B6A100192A5A080047979C /* GHObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A0FE192A5A080047979C /* GHObject.m */; };
 		04B6A103192A5A2D0047979C /* GHRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A102192A5A2D0047979C /* GHRepository.m */; };
 		04B6A104192A5A2D0047979C /* GHRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A102192A5A2D0047979C /* GHRepository.m */; };
+		50E47C55193CBF9500A1FFA9 /* NSTask+XPPod.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E47C54193CBF9500A1FFA9 /* NSTask+XPPod.m */; };
+		50E47C56193CBF9500A1FFA9 /* NSTask+XPPod.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E47C54193CBF9500A1FFA9 /* NSTask+XPPod.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -208,6 +210,8 @@
 		04B6A0FE192A5A080047979C /* GHObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHObject.m; sourceTree = "<group>"; };
 		04B6A101192A5A2D0047979C /* GHRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHRepository.h; sourceTree = "<group>"; };
 		04B6A102192A5A2D0047979C /* GHRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepository.m; sourceTree = "<group>"; };
+		50E47C53193CBF9500A1FFA9 /* NSTask+XPPod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTask+XPPod.h"; sourceTree = "<group>"; };
+		50E47C54193CBF9500A1FFA9 /* NSTask+XPPod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTask+XPPod.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +253,8 @@
 				0411C5B71934994D009F44A3 /* NSDictionary+ManipulationAdditions.m */,
 				0411C5B81934994D009F44A3 /* NSString+RegularExpressions.h */,
 				0411C5B91934994D009F44A3 /* NSString+RegularExpressions.m */,
+				50E47C53193CBF9500A1FFA9 /* NSTask+XPPod.h */,
+				50E47C54193CBF9500A1FFA9 /* NSTask+XPPod.m */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -577,6 +583,7 @@
 				04617FF81924F033009BEF7A /* main.m in Sources */,
 				04B6A08E1926613F0047979C /* NSMutableOrderedSet+BlocksKit.m in Sources */,
 				04B6A03D192657730047979C /* AFHTTPRequestOperationManager.m in Sources */,
+				50E47C55193CBF9500A1FFA9 /* NSTask+XPPod.m in Sources */,
 				04B6A043192657730047979C /* AFSecurityPolicy.m in Sources */,
 				04B6A0981926613F0047979C /* NSOrderedSet+BlocksKit.m in Sources */,
 				04B6A08C1926613F0047979C /* NSMutableIndexSet+BlocksKit.m in Sources */,
@@ -606,6 +613,7 @@
 				04B6A0831926613F0047979C /* NSDictionary+BlocksKit.m in Sources */,
 				04B6A053192659B40047979C /* XPTestSourceFetcher.m in Sources */,
 				04B6A08D1926613F0047979C /* NSMutableIndexSet+BlocksKit.m in Sources */,
+				50E47C56193CBF9500A1FFA9 /* NSTask+XPPod.m in Sources */,
 				04B6A08B1926613F0047979C /* NSMutableDictionary+BlocksKit.m in Sources */,
 				04B6A051192658910047979C /* XPSourceFetcher.m in Sources */,
 				04B6A040192657730047979C /* AFHTTPSessionManager.m in Sources */,
