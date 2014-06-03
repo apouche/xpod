@@ -35,10 +35,8 @@ typedef NS_ENUM(NSUInteger, XPCompilerMode) {
 
 @implementation XPCompiler
 
-- (void)compilePod:(XPPod *)pod podArchitectureOnly:(BOOL)podArchsOnly {
+- (void)compilePod:(XPPod *)pod sourceDirectory:(NSString *)sourceDir podArchitectureOnly:(BOOL)podArchsOnly {
     NSAssert(self.podRootDirectory, @"self.podRootDirectory must not be nil");
-    
-    NSString *sourceDir = @"AFNetworking";
     
     NSString *deviceMinVersionArg = [self minVersionArgumentForMode:XPCompilerModeDevice];
     NSString *deviceSDKPath = [self sdkPathForMode:XPCompilerModeDevice];

@@ -32,6 +32,8 @@
 
 - (void)tearDown {
     [super tearDown];
+    
+    [[NSFileManager defaultManager] removeItemAtPath:@"/tmp/xpod" error:nil];
 }
 
 - (void)testCompiler {
@@ -39,8 +41,11 @@
     pod.name = @"AFNetworking";
     pod.architectures = @[@"armv7", @"armv7s", @"arm64"];
     
-    self.compiler.podRootDirectory = @"./";
-    [self.compiler compilePod:pod podArchitectureOnly:NO];
+    self.compiler.podRootDirectory = @"/tmp/xpod";
+    
+    NSString *currentDir = [[NSFileManager defaultManager] currentDirectoryPath];
+    NSString *sourceDir = [currentDir stringByAppendingPathComponent:@"xpod-specs/sources/AFNetworking"];
+    [self.compiler compilePod:pod sourceDirectory:sourceDir podArchitectureOnly:NO];
     
     for (NSString *arch in [pod.architectures arrayByAddingObjectsFromArray:@[@"i386", @"x86_64"]]) {
         NSString *path = [NSString stringWithFormat:@"%@/%@_%@.a", [self.compiler.podRootDirectory stringByAppendingPathComponent:kLibsDirectory], pod.name, arch];

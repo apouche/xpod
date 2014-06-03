@@ -19,6 +19,6 @@ extern NSString * const kObjectFilesDirectory;
 
 @property (nonatomic, strong) NSString *podRootDirectory;
 
-- (void)compilePod:(XPPod *)pod podArchitectureOnly:(BOOL)podArchsOnly;
+- (void)compilePod:(XPPod *)pod sourceDirectory:(NSString *)sourceDir podArchitectureOnly:(BOOL)podArchsOnly;
 
 @end
