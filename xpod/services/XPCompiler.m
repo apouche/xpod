@@ -13,6 +13,7 @@
 
 NSString * const kLibsDirectory = @"libs";
 NSString * const kObjectFilesDirectory = @"object_files";
+NSString * const kHeadersDirectory = @"headers";
 
 
 typedef NS_ENUM(NSUInteger, XPCompilerMode) {
@@ -25,6 +26,7 @@ typedef NS_ENUM(NSUInteger, XPCompilerMode) {
 
 - (void)compileForArch:(NSString *)arch withMinVersionArg:(NSString *)minVersionArg sysroot:(NSString *)sysroot sourceDir:(NSString *)sourceDir name:(NSString *)name;
 - (void)linkForArch:(NSString *)arch sysroot:(NSString *)sysroot name:(NSString *)name;
+- (void)copyHeadersFromDirectory:(NSString *)sourceDir;
 
 - (NSString *)sdkPathForMode:(XPCompilerMode)mode;
 - (NSString *)minVersionArgumentForMode:(XPCompilerMode)mode;
@@ -69,6 +71,8 @@ typedef NS_ENUM(NSUInteger, XPCompilerMode) {
                          name:pod.name];
         }
     }
+    
+    [self copyHeadersFromDirectory:sourceDir];
 }
 
 - (void)compileForArch:(NSString *)arch withMinVersionArg:(NSString *)minVersionArg sysroot:(NSString *)sysroot sourceDir:(NSString *)sourceDir name:(NSString *)name {
@@ -86,7 +90,7 @@ typedef NS_ENUM(NSUInteger, XPCompilerMode) {
                            @"-isysroot", sysroot,
                            @"-c"];
     
-    arguments = [arguments arrayByAddingObjectsFromArray:[NSTask filenamesInDirectory:sourceDir ofType:@"m"]];
+    arguments = [arguments arrayByAddingObjectsFromArray:[NSTask filesPathInDirectory:sourceDir ofType:@"m"]];
     
     [NSTask launchTaskFromDirectory:[self pathToObjectFilesDirectoryForArch:arch name:name]
                      withLaunchPath:@"/usr/bin/clang"
@@ -102,12 +106,17 @@ typedef NS_ENUM(NSUInteger, XPCompilerMode) {
     NSString *objectFiles = [self pathToObjectFilesDirectoryForArch:arch name:name];
     NSString *libs = [self.podRootDirectory stringByAppendingPathComponent:kLibsDirectory];
     
-    arguments = [arguments arrayByAddingObjectsFromArray:[NSTask filenamesInDirectory:objectFiles ofType:@"o"]];
+    arguments = [arguments arrayByAddingObjectsFromArray:[NSTask filesPathInDirectory:objectFiles ofType:@"o"]];
     arguments = [arguments arrayByAddingObjectsFromArray:@[@"-o", [NSString stringWithFormat:@"%@/%@_%@.a", libs, name, arch]]];
     
     [NSTask launchTaskFromDirectory:[self.podRootDirectory stringByAppendingPathComponent:kLibsDirectory]
                      withLaunchPath:@"/usr/bin/libtool"
                           arguments:arguments];
+}
+
+- (void)copyHeadersFromDirectory:(NSString *)sourceDir {
+    [NSTask copyFiles:[NSTask filesPathInDirectory:sourceDir ofType:@"h"]
+          toDirectory:[self.podRootDirectory stringByAppendingPathComponent:kHeadersDirectory]];
 }
 
 - (NSString *)sdkPathForMode:(XPCompilerMode)mode {

@@ -13,6 +13,7 @@
 
 extern NSString * const kLibsDirectory;
 extern NSString * const kObjectFilesDirectory;
+extern NSString * const kHeadersDirectory;
 
 
 @interface XPCompiler : NSObject
