@@ -33,7 +33,7 @@
     return [[NSString alloc] initWithData:outputData encoding:NSUTF8StringEncoding];
 }
 
-+ (NSArray *)filenamesInDirectory:(NSString *)directory ofType:(NSString *)extension {
++ (NSArray *)filesPathInDirectory:(NSString *)directory ofType:(NSString *)extension {
     NSString *output = [self launchTaskWithLaunchPath:@"/bin/ls"
                                             arguments:@[directory]];
     
@@ -46,12 +46,27 @@
     return [NSArray arrayWithArray:filenames];
 }
 
++ (void)copyFiles:(NSArray *)files toDirectory:(NSString *)destinationDirectory {
+    [self createDirectory:destinationDirectory];
+    
+    for (NSString *file in files) {
+        [self launchTaskWithLaunchPath:@"/bin/cp"
+                             arguments:@[file, destinationDirectory]];
+    }
+}
+
 + (void)createDirectory:(NSString *)directory {
     if ([[NSFileManager defaultManager] fileExistsAtPath:directory])
         return;
     
     [self launchTaskWithLaunchPath:@"/bin/mkdir"
                          arguments:@[@"-p", directory]];
+}
+
++ (void)symlinkInDirectory:(NSString *)baseDirectory fromFile:(NSString *)fromFile toFile:(NSString *)toFile {
+    [self launchTaskFromDirectory:baseDirectory
+                   withLaunchPath:@"/bin/ln"
+                        arguments:@[@"-s", fromFile, toFile]];
 }
 
 @end
