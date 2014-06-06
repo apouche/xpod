@@ -89,6 +89,8 @@
 		04B6A100192A5A080047979C /* GHObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A0FE192A5A080047979C /* GHObject.m */; };
 		04B6A103192A5A2D0047979C /* GHRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A102192A5A2D0047979C /* GHRepository.m */; };
 		04B6A104192A5A2D0047979C /* GHRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A102192A5A2D0047979C /* GHRepository.m */; };
+		50046AC51941BF6800522709 /* XPFrameworkMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 50046AC41941BF6800522709 /* XPFrameworkMaker.m */; };
+		50046AC61941BF6800522709 /* XPFrameworkMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 50046AC41941BF6800522709 /* XPFrameworkMaker.m */; };
 		50E47C4E193CBE3800A1FFA9 /* XPTestCompiler.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E47C4D193CBE3800A1FFA9 /* XPTestCompiler.m */; };
 		50E47C51193CBE5B00A1FFA9 /* XPCompiler.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E47C50193CBE5B00A1FFA9 /* XPCompiler.m */; };
 		50E47C52193CBE5B00A1FFA9 /* XPCompiler.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E47C50193CBE5B00A1FFA9 /* XPCompiler.m */; };
@@ -213,6 +215,8 @@
 		04B6A0FE192A5A080047979C /* GHObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHObject.m; sourceTree = "<group>"; };
 		04B6A101192A5A2D0047979C /* GHRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHRepository.h; sourceTree = "<group>"; };
 		04B6A102192A5A2D0047979C /* GHRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepository.m; sourceTree = "<group>"; };
+		50046AC31941BF6800522709 /* XPFrameworkMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPFrameworkMaker.h; sourceTree = "<group>"; };
+		50046AC41941BF6800522709 /* XPFrameworkMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPFrameworkMaker.m; sourceTree = "<group>"; };
 		50E47C4D193CBE3800A1FFA9 /* XPTestCompiler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPTestCompiler.m; sourceTree = "<group>"; };
 		50E47C4F193CBE5B00A1FFA9 /* XPCompiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPCompiler.h; sourceTree = "<group>"; };
 		50E47C50193CBE5B00A1FFA9 /* XPCompiler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPCompiler.m; sourceTree = "<group>"; };
@@ -406,6 +410,8 @@
 				04B6A05919265AF40047979C /* XPModelParser.m */,
 				50E47C4F193CBE5B00A1FFA9 /* XPCompiler.h */,
 				50E47C50193CBE5B00A1FFA9 /* XPCompiler.m */,
+				50046AC31941BF6800522709 /* XPFrameworkMaker.h */,
+				50046AC41941BF6800522709 /* XPFrameworkMaker.m */,
 			);
 			path = services;
 			sourceTree = "<group>";
@@ -587,6 +593,7 @@
 				04B6A0841926613F0047979C /* NSIndexSet+BlocksKit.m in Sources */,
 				04B6A08A1926613F0047979C /* NSMutableDictionary+BlocksKit.m in Sources */,
 				04B6A0901926613F0047979C /* NSMutableSet+BlocksKit.m in Sources */,
+				50046AC51941BF6800522709 /* XPFrameworkMaker.m in Sources */,
 				04B6A049192657730047979C /* AFURLResponseSerialization.m in Sources */,
 				046180051924F0A7009BEF7A /* XPObject.m in Sources */,
 				04617FF81924F033009BEF7A /* main.m in Sources */,
@@ -644,6 +651,7 @@
 				04B6A03E192657730047979C /* AFHTTPRequestOperationManager.m in Sources */,
 				04B6A0991926613F0047979C /* NSOrderedSet+BlocksKit.m in Sources */,
 				04B6A044192657730047979C /* AFSecurityPolicy.m in Sources */,
+				50046AC61941BF6800522709 /* XPFrameworkMaker.m in Sources */,
 				04B6A0851926613F0047979C /* NSIndexSet+BlocksKit.m in Sources */,
 				0411C5BB1934994D009F44A3 /* NSDictionary+ManipulationAdditions.m in Sources */,
 				04B6A057192659E60047979C /* XPPod.m in Sources */,
