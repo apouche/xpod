@@ -28,7 +28,8 @@
 #import <CoreServices/CoreServices.h>
 #endif
 
-extern NSString * const AFNetworkingErrorDomain;
+NSString * const AFURLRequestSerializationErrorDomain = @"com.alamofire.error.serialization.request";
+NSString * const AFNetworkingOperationFailingURLRequestErrorKey = @"com.alamofire.serialization.request.error.response";
 
 typedef NSString * (^AFQueryStringSerializationBlock)(NSURLRequest *request, NSDictionary *parameters, NSError *__autoreleasing *error);
 
@@ -600,16 +601,16 @@ NSTimeInterval const kAFUploadStream3GSuggestedDelay = 0.2;
     NSParameterAssert(mimeType);
 
     if (![fileURL isFileURL]) {
-        NSDictionary *userInfo = [NSDictionary dictionaryWithObject:NSLocalizedStringFromTable(@"Expected URL to be a file URL", @"AFNetworking", nil) forKey:NSLocalizedFailureReasonErrorKey];
+        NSDictionary *userInfo = @{NSLocalizedFailureReasonErrorKey: NSLocalizedStringFromTable(@"Expected URL to be a file URL", @"AFNetworking", nil)};
         if (error) {
-            *error = [[NSError alloc] initWithDomain:AFNetworkingErrorDomain code:NSURLErrorBadURL userInfo:userInfo];
+            *error = [[NSError alloc] initWithDomain:AFURLRequestSerializationErrorDomain code:NSURLErrorBadURL userInfo:userInfo];
         }
 
         return NO;
     } else if ([fileURL checkResourceIsReachableAndReturnError:error] == NO) {
-        NSDictionary *userInfo = [NSDictionary dictionaryWithObject:NSLocalizedStringFromTable(@"File URL not reachable.", @"AFNetworking", nil) forKey:NSLocalizedFailureReasonErrorKey];
+        NSDictionary *userInfo = @{NSLocalizedFailureReasonErrorKey: NSLocalizedStringFromTable(@"File URL not reachable.", @"AFNetworking", nil)};
         if (error) {
-            *error = [[NSError alloc] initWithDomain:AFNetworkingErrorDomain code:NSURLErrorBadURL userInfo:userInfo];
+            *error = [[NSError alloc] initWithDomain:AFURLRequestSerializationErrorDomain code:NSURLErrorBadURL userInfo:userInfo];
         }
 
         return NO;
@@ -729,9 +730,13 @@ NSTimeInterval const kAFUploadStream3GSuggestedDelay = 0.2;
 
 #pragma mark -
 
+@interface NSStream ()
+@property (readwrite) NSStreamStatus streamStatus;
+@property (readwrite, copy) NSError *streamError;
+@end
+
+
 @interface AFMultipartBodyStream () <NSCopying>
-@property (readwrite, nonatomic, assign) NSStreamStatus streamStatus;
-@property (readwrite, nonatomic, strong) NSError *streamError;
 @property (readwrite, nonatomic, assign) NSStringEncoding stringEncoding;
 @property (readwrite, nonatomic, strong) NSMutableArray *HTTPBodyParts;
 @property (readwrite, nonatomic, strong) NSEnumerator *HTTPBodyPartEnumerator;
