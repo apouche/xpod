@@ -222,6 +222,7 @@
 		50E47C50193CBE5B00A1FFA9 /* XPCompiler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPCompiler.m; sourceTree = "<group>"; };
 		50E47C53193CBF9500A1FFA9 /* NSTask+XPPod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTask+XPPod.h"; sourceTree = "<group>"; };
 		50E47C54193CBF9500A1FFA9 /* NSTask+XPPod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTask+XPPod.m"; sourceTree = "<group>"; };
+		50D79F471949A9FF00D80CCD /* xpod-bridging-header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "xpod-bridging-header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -810,6 +811,7 @@
 				INFOPLIST_FILE = "xpod-specs/xpod-specs-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "xpod/xpod-bridging-header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -828,6 +830,7 @@
 				INFOPLIST_FILE = "xpod-specs/xpod-specs-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "xpod/xpod-bridging-header.h";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
