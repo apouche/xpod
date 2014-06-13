@@ -19,7 +19,7 @@ enum XPCompilerMode: Int {
 }
 
 
-@objc class XPCompiler {
+class XPCompiler {
     var podRootDirectory: String = ""
     
     func compileAndLink(pod: XPPod, sourceDir: String, podArchsOnly: Bool) {

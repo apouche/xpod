@@ -11,7 +11,7 @@ import Foundation
 
 let kFrameworkName = "XPod"
 
-@objc class XPFrameworkMaker {
+class XPFrameworkMaker {
     var frameworkRootPath: String = ""
     
     func buildFramework(path: String, libs: String, headers: String) {
