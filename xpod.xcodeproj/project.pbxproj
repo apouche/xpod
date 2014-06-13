@@ -89,13 +89,13 @@
 		04B6A100192A5A080047979C /* GHObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A0FE192A5A080047979C /* GHObject.m */; };
 		04B6A103192A5A2D0047979C /* GHRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A102192A5A2D0047979C /* GHRepository.m */; };
 		04B6A104192A5A2D0047979C /* GHRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A102192A5A2D0047979C /* GHRepository.m */; };
-		50046AC51941BF6800522709 /* XPFrameworkMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 50046AC41941BF6800522709 /* XPFrameworkMaker.m */; };
-		50046AC61941BF6800522709 /* XPFrameworkMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 50046AC41941BF6800522709 /* XPFrameworkMaker.m */; };
-		50E47C4E193CBE3800A1FFA9 /* XPTestCompiler.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E47C4D193CBE3800A1FFA9 /* XPTestCompiler.m */; };
-		50E47C51193CBE5B00A1FFA9 /* XPCompiler.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E47C50193CBE5B00A1FFA9 /* XPCompiler.m */; };
-		50E47C52193CBE5B00A1FFA9 /* XPCompiler.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E47C50193CBE5B00A1FFA9 /* XPCompiler.m */; };
-		50E47C55193CBF9500A1FFA9 /* NSTask+XPPod.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E47C54193CBF9500A1FFA9 /* NSTask+XPPod.m */; };
-		50E47C56193CBF9500A1FFA9 /* NSTask+XPPod.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E47C54193CBF9500A1FFA9 /* NSTask+XPPod.m */; };
+		5067933B19498D8800611988 /* NSTask+XPPod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5067933A19498D8800611988 /* NSTask+XPPod.swift */; };
+		5067933C19498D8800611988 /* NSTask+XPPod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5067933A19498D8800611988 /* NSTask+XPPod.swift */; };
+		50AA10DF194A7C6A0087D0C7 /* XPFrameworkMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AA10DE194A7C6A0087D0C7 /* XPFrameworkMaker.swift */; };
+		50AA10E0194A7C6A0087D0C7 /* XPFrameworkMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AA10DE194A7C6A0087D0C7 /* XPFrameworkMaker.swift */; };
+		50AA10E2194AE00B0087D0C7 /* XPTestCompilerAndFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AA10E1194AE00B0087D0C7 /* XPTestCompilerAndFramework.swift */; };
+		50D79F411949A59000D80CCD /* XPCompiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D79F401949A59000D80CCD /* XPCompiler.swift */; };
+		50D79F421949A59000D80CCD /* XPCompiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D79F401949A59000D80CCD /* XPCompiler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -215,13 +215,10 @@
 		04B6A0FE192A5A080047979C /* GHObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHObject.m; sourceTree = "<group>"; };
 		04B6A101192A5A2D0047979C /* GHRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHRepository.h; sourceTree = "<group>"; };
 		04B6A102192A5A2D0047979C /* GHRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepository.m; sourceTree = "<group>"; };
-		50046AC31941BF6800522709 /* XPFrameworkMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPFrameworkMaker.h; sourceTree = "<group>"; };
-		50046AC41941BF6800522709 /* XPFrameworkMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPFrameworkMaker.m; sourceTree = "<group>"; };
-		50E47C4D193CBE3800A1FFA9 /* XPTestCompiler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPTestCompiler.m; sourceTree = "<group>"; };
-		50E47C4F193CBE5B00A1FFA9 /* XPCompiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPCompiler.h; sourceTree = "<group>"; };
-		50E47C50193CBE5B00A1FFA9 /* XPCompiler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPCompiler.m; sourceTree = "<group>"; };
-		50E47C53193CBF9500A1FFA9 /* NSTask+XPPod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTask+XPPod.h"; sourceTree = "<group>"; };
-		50E47C54193CBF9500A1FFA9 /* NSTask+XPPod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTask+XPPod.m"; sourceTree = "<group>"; };
+		5067933A19498D8800611988 /* NSTask+XPPod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTask+XPPod.swift"; sourceTree = "<group>"; };
+		50AA10DE194A7C6A0087D0C7 /* XPFrameworkMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPFrameworkMaker.swift; sourceTree = "<group>"; };
+		50AA10E1194AE00B0087D0C7 /* XPTestCompilerAndFramework.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPTestCompilerAndFramework.swift; sourceTree = "<group>"; };
+		50D79F401949A59000D80CCD /* XPCompiler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPCompiler.swift; sourceTree = "<group>"; };
 		50D79F471949A9FF00D80CCD /* xpod-bridging-header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "xpod-bridging-header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -264,8 +261,7 @@
 				0411C5B71934994D009F44A3 /* NSDictionary+ManipulationAdditions.m */,
 				0411C5B81934994D009F44A3 /* NSString+RegularExpressions.h */,
 				0411C5B91934994D009F44A3 /* NSString+RegularExpressions.m */,
-				50E47C53193CBF9500A1FFA9 /* NSTask+XPPod.h */,
-				50E47C54193CBF9500A1FFA9 /* NSTask+XPPod.m */,
+				5067933A19498D8800611988 /* NSTask+XPPod.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -349,7 +345,7 @@
 				046180351924FBFA009BEF7A /* XPTestHelper.h */,
 				046180361924FBFA009BEF7A /* XPTestHelper.m */,
 				04B6A052192659B40047979C /* XPTestSourceFetcher.m */,
-				50E47C4D193CBE3800A1FFA9 /* XPTestCompiler.m */,
+				50AA10E1194AE00B0087D0C7 /* XPTestCompilerAndFramework.swift */,
 			);
 			path = specs;
 			sourceTree = "<group>";
@@ -410,10 +406,8 @@
 				0411C5AB19348F30009F44A3 /* fetchers */,
 				04B6A05819265AF40047979C /* XPModelParser.h */,
 				04B6A05919265AF40047979C /* XPModelParser.m */,
-				50E47C4F193CBE5B00A1FFA9 /* XPCompiler.h */,
-				50E47C50193CBE5B00A1FFA9 /* XPCompiler.m */,
-				50046AC31941BF6800522709 /* XPFrameworkMaker.h */,
-				50046AC41941BF6800522709 /* XPFrameworkMaker.m */,
+				50D79F401949A59000D80CCD /* XPCompiler.swift */,
+				50AA10DE194A7C6A0087D0C7 /* XPFrameworkMaker.swift */,
 			);
 			path = services;
 			sourceTree = "<group>";
@@ -584,28 +578,28 @@
 				0411C5BA1934994D009F44A3 /* NSDictionary+ManipulationAdditions.m in Sources */,
 				04B6A0801926613F0047979C /* NSArray+BlocksKit.m in Sources */,
 				04B6A0881926613F0047979C /* NSMutableArray+BlocksKit.m in Sources */,
+				50D79F411949A59000D80CCD /* XPCompiler.swift in Sources */,
 				04B6A0861926613F0047979C /* NSInvocation+BlocksKit.m in Sources */,
 				04B6A0921926613F0047979C /* NSObject+BKAssociatedObjects.m in Sources */,
 				04B6A04B192657730047979C /* AFURLSessionManager.m in Sources */,
 				04B6A09A1926613F0047979C /* NSSet+BlocksKit.m in Sources */,
 				04B6A047192657730047979C /* AFURLRequestSerialization.m in Sources */,
 				04B6A0FF192A5A080047979C /* GHObject.m in Sources */,
+				50AA10DF194A7C6A0087D0C7 /* XPFrameworkMaker.swift in Sources */,
 				0411C5BC1934994D009F44A3 /* NSString+RegularExpressions.m in Sources */,
 				0461804219250197009BEF7A /* YKEmitter.m in Sources */,
 				04B6A0841926613F0047979C /* NSIndexSet+BlocksKit.m in Sources */,
 				04B6A08A1926613F0047979C /* NSMutableDictionary+BlocksKit.m in Sources */,
 				04B6A0901926613F0047979C /* NSMutableSet+BlocksKit.m in Sources */,
-				50046AC51941BF6800522709 /* XPFrameworkMaker.m in Sources */,
 				04B6A049192657730047979C /* AFURLResponseSerialization.m in Sources */,
 				046180051924F0A7009BEF7A /* XPObject.m in Sources */,
 				04617FF81924F033009BEF7A /* main.m in Sources */,
 				04B6A08E1926613F0047979C /* NSMutableOrderedSet+BlocksKit.m in Sources */,
 				04B6A03D192657730047979C /* AFHTTPRequestOperationManager.m in Sources */,
-				50E47C55193CBF9500A1FFA9 /* NSTask+XPPod.m in Sources */,
-				50E47C51193CBE5B00A1FFA9 /* XPCompiler.m in Sources */,
 				04B6A043192657730047979C /* AFSecurityPolicy.m in Sources */,
 				04B6A0981926613F0047979C /* NSOrderedSet+BlocksKit.m in Sources */,
 				04B6A08C1926613F0047979C /* NSMutableIndexSet+BlocksKit.m in Sources */,
+				5067933B19498D8800611988 /* NSTask+XPPod.swift in Sources */,
 				0461804319250197009BEF7A /* YKParser.m in Sources */,
 				0461804119250197009BEF7A /* YAMLKit.m in Sources */,
 				04B6A05A19265AF40047979C /* XPModelParser.m in Sources */,
@@ -626,20 +620,19 @@
 				04B6A04C192657730047979C /* AFURLSessionManager.m in Sources */,
 				046180321924F838009BEF7A /* XPTestParsing.m in Sources */,
 				046180371924FBFA009BEF7A /* XPTestHelper.m in Sources */,
+				50AA10E0194A7C6A0087D0C7 /* XPFrameworkMaker.swift in Sources */,
 				04B6A042192657730047979C /* AFNetworkReachabilityManager.m in Sources */,
 				0461804519250B1B009BEF7A /* YAMLKit.m in Sources */,
 				04B6A046192657730047979C /* AFURLConnectionOperation.m in Sources */,
 				04B6A0831926613F0047979C /* NSDictionary+BlocksKit.m in Sources */,
 				04B6A053192659B40047979C /* XPTestSourceFetcher.m in Sources */,
 				04B6A08D1926613F0047979C /* NSMutableIndexSet+BlocksKit.m in Sources */,
-				50E47C56193CBF9500A1FFA9 /* NSTask+XPPod.m in Sources */,
 				04B6A08B1926613F0047979C /* NSMutableDictionary+BlocksKit.m in Sources */,
 				04B6A051192658910047979C /* XPSourceFetcher.m in Sources */,
 				04B6A040192657730047979C /* AFHTTPSessionManager.m in Sources */,
 				0411C5BD1934994D009F44A3 /* NSString+RegularExpressions.m in Sources */,
 				04B6A048192657730047979C /* AFURLRequestSerialization.m in Sources */,
 				0461804619250B1B009BEF7A /* YKEmitter.m in Sources */,
-				50E47C52193CBE5B00A1FFA9 /* XPCompiler.m in Sources */,
 				0411C5B319349538009F44A3 /* XPSourceFetcher+Github.m in Sources */,
 				04B6A0871926613F0047979C /* NSInvocation+BlocksKit.m in Sources */,
 				04B6A104192A5A2D0047979C /* GHRepository.m in Sources */,
@@ -647,13 +640,12 @@
 				04B6A0811926613F0047979C /* NSArray+BlocksKit.m in Sources */,
 				04B6A0971926613F0047979C /* NSObject+BKBlockObservation.m in Sources */,
 				0461804719250B1B009BEF7A /* YKParser.m in Sources */,
-				50E47C4E193CBE3800A1FFA9 /* XPTestCompiler.m in Sources */,
 				0461804819250B1B009BEF7A /* XPObject.m in Sources */,
+				5067933C19498D8800611988 /* NSTask+XPPod.swift in Sources */,
 				04B6A0891926613F0047979C /* NSMutableArray+BlocksKit.m in Sources */,
 				04B6A03E192657730047979C /* AFHTTPRequestOperationManager.m in Sources */,
 				04B6A0991926613F0047979C /* NSOrderedSet+BlocksKit.m in Sources */,
 				04B6A044192657730047979C /* AFSecurityPolicy.m in Sources */,
-				50046AC61941BF6800522709 /* XPFrameworkMaker.m in Sources */,
 				04B6A0851926613F0047979C /* NSIndexSet+BlocksKit.m in Sources */,
 				0411C5BB1934994D009F44A3 /* NSDictionary+ManipulationAdditions.m in Sources */,
 				04B6A057192659E60047979C /* XPPod.m in Sources */,
@@ -662,10 +654,12 @@
 				04B6A09B1926613F0047979C /* NSSet+BlocksKit.m in Sources */,
 				04B6A100192A5A080047979C /* GHObject.m in Sources */,
 				04B6A05B19265AF40047979C /* XPModelParser.m in Sources */,
+				50AA10E2194AE00B0087D0C7 /* XPTestCompilerAndFramework.swift in Sources */,
 				04B6A03C192657730047979C /* AFHTTPRequestOperation.m in Sources */,
 				04B6A09D1926613F0047979C /* NSTimer+BlocksKit.m in Sources */,
 				04B6A08F1926613F0047979C /* NSMutableOrderedSet+BlocksKit.m in Sources */,
 				04B6A0951926613F0047979C /* NSObject+BKBlockExecution.m in Sources */,
+				50D79F421949A59000D80CCD /* XPCompiler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
